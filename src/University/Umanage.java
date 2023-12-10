@@ -2,6 +2,7 @@ package University;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class Umanage {
@@ -39,6 +40,16 @@ public class Umanage {
 
         s1.display();
         t1.display();
+
+        Exam e1 = new Exam(c1);
+        HashMap<Student, Integer> sheet = new HashMap<Student, Integer>();
+
+        sheet.put(s1,80);
+        sheet.put(s2,95);
+
+        e1.addMarks(sheet);
+        e1.displayMarks();
+
     }
 
 
